@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagementWithApi", "EmployeeManagementWithApi\EmployeeManagementWithApi.csproj", "{98B47A38-F704-48E4-8014-A8E4A60CA204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMS", "EMS\EMS.csproj", "{F37792DB-1084-43E2-A3D1-2271BC23E65B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98B47A38-F704-48E4-8014-A8E4A60CA204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B47A38-F704-48E4-8014-A8E4A60CA204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B47A38-F704-48E4-8014-A8E4A60CA204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B47A38-F704-48E4-8014-A8E4A60CA204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F37792DB-1084-43E2-A3D1-2271BC23E65B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F37792DB-1084-43E2-A3D1-2271BC23E65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F37792DB-1084-43E2-A3D1-2271BC23E65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F37792DB-1084-43E2-A3D1-2271BC23E65B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C45256F-5E2B-429E-A9A0-66A8D242D47C}
+	EndGlobalSection
+EndGlobal

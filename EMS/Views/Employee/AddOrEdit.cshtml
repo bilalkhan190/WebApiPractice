@@ -1,0 +1,59 @@
+﻿@model EMS.Models.MVCEmpModel
+@{
+    ViewBag.Title = "Create Employee";
+}
+<h3>create employee</h3>
+
+<div class="container">
+    <div class="row col-md-12">
+       @using(Html.BeginForm("AddOrEdit", "Employee", FormMethod.Post, new { @class = "from-horizontal" }))
+        {
+
+        @Html.HiddenFor(x => x.ID)
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Name</label>
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Name ,"",new  { @class="text-danger" })
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Department</label>
+                @Html.TextBoxFor(x => x.Department, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Department, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>designation</label>
+                @Html.TextBoxFor(x => x.Designation, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Designation, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Salary</label>
+                @Html.TextBoxFor(x => x.Salary, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Salary, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <input type="submit" value="Save" class="btn btn-primary">
+        <input type="button" id="btnclear" value="clear" class="btn btn-info">
+        }
+
+    </div>
+</div>
+@section scripts{
+     @Scripts.Render("~/bundles/jqueryval");
+
+    <script>
+        $(document).ready(function () {
+            $('#btnclear').click(function () {
+                $('input[type="text"]').val('');
+                $('input[type="hidden"]').val('');
+            })
+        });
+    </script>
+    
+    }
